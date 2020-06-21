@@ -1,0 +1,12 @@
+def climbingLeaderboard(scores, alice):
+    l=[]
+    k=[]
+    l=list(dict.fromkeys(scores))
+    pos=0
+    for i in (alice):
+        l.append(i)
+        l.sort(reverse=True)
+        pos=l.index(i) +1
+        k.append(pos)
+    return k
+            
