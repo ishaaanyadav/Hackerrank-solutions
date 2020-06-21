@@ -1,0 +1,13 @@
+def breakingRecords(scores):
+    h=scores[0]
+    s=scores[0]
+    ch=0
+    cs=0
+    for i in scores:
+        if(i>h):
+            h=i
+            ch=ch+1
+        if(i<s):
+            s=i
+            cs=cs+1
+    return (ch,cs)
